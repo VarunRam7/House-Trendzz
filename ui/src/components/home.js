@@ -104,11 +104,11 @@ export default function Home() {
                         </div>
                         <div className='p-4 m-4 border-2 text-xl p-auto w-full rounded-md  border-blue-300 font-semibold'>
                             <div className='flex items-center justify-center text-green-500'>{d1[0].total_active}</div>
-                            <div className='flex items-center justify-center'>{"Total Active Sales"}</div>
+                            <div className='flex items-center justify-center'>{"Total Active Properties"}</div>
                         </div>
                         <div className='p-4 m-4 border-2 text-xl p-auto w-full rounded-md  border-blue-300 font-semibold'>
                             <div className='flex items-center justify-center text-yellow-500'>{d1[0].median_days_on_market}</div>
-                            <div className='flex items-center justify-center'>{"Medain Days on Market"}</div>
+                            <div className='flex items-center justify-center'>{"Median Days on Market"}</div>
                         </div>
                         <div className='p-4 m-4 border-2 text-xl p-auto w-full rounded-md  border-blue-300 font-semibold'>
                             <div className='flex items-center justify-center text-indigo-500'>{d1[0].median_active_list_price}</div>
