@@ -36,7 +36,7 @@ router.post('/get-region-info', async (req, res) => {
         'SELECT total_homes_sold,period_begin,period_end FROM zerodown.market where region_name = ? and duration="4 weeks";' +
         'SELECT total_homes_sold,period_begin,period_end FROM zerodown.market where region_name = ? and duration="12 weeks";' +
         'SELECT sum(total_homes_sold) as total_sale,sum(total_active_listings) as total_active, avg(median_days_on_market) as median_days_on_market, avg(median_active_list_price) as median_active_list_price, avg(average_sale_to_list_ratio) as average_sale_to_list_ratio FROM zerodown.market where region_name = ?;' +
-        'SELECT sum(total_new_listings) as total_new_listings, sum(pending_sales) as pending_sales FROM zerodown.market where region_name = ?;';
+        'SELECT sum(total_homes_sold) as total_homes_sold, sum(pending_sales) as pending_sales FROM zerodown.market where region_name = ?;';
     connection.query(
         q, [region, region, region, region, region],
         function (err, results, fields) {
