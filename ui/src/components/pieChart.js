@@ -24,7 +24,7 @@ export default function PieChart({ gData }) {
         datasets: [
             {
                 label: '# of Votes',
-                data: [gData[0].total_new_listings - gData[0].pending_sales, gData[0].pending_sales],
+                data: [gData[0].total_homes_sold, gData[0].pending_sales],
                 backgroundColor: [
                     'rgba(255, 99, 132, 0.2)',
                     'rgba(54, 162, 235, 0.2)',
