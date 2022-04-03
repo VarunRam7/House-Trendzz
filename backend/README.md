@@ -1,5 +1,113 @@
 # Getting started with zerodown-backend
 
+# Install all dependencies
+
+### `npm install`
+
+# Create Database Schema in MySql
+
+CREATE TABLE market(
+region_id DOUBLE,
+region_type_id DOUBLE,
+region_name VARCHAR(100),
+region_type VARCHAR(100),
+period_begin VARCHAR(100),
+period_end VARCHAR(100),
+duration VARCHAR(100),
+total_homes_sold DOUBLE,
+total_homes_sold_yoy DOUBLE,
+average_homes_sold DOUBLE,
+average_homes_sold_yoy DOUBLE,
+total_homes_sold_with_price_drops DOUBLE,
+total_homes_sold_with_price_drops_yoy DOUBLE,
+average_homes_sold_with_price_drops DOUBLE,
+average_homes_sold_with_price_drops_yoy DOUBLE,
+percent_homes_sold_with_price_drops DOUBLE,
+percent_homes_sold_with_price_drops_yoy DOUBLE,
+median_sale_price DOUBLE,
+median_sale_price_yoy DOUBLE,
+median_sale_ppsf DOUBLE,
+median_sale_ppsf_yoy DOUBLE,
+median_days_to_close DOUBLE,
+median_days_to_close_yoy DOUBLE,
+price_drops DOUBLE,
+price_drops_yoy DOUBLE,
+percent_active_listings_with_price_drops DOUBLE,
+percent_active_listings_with_price_drops_yoy DOUBLE,
+pending_sales DOUBLE,
+pending_sales_yoy DOUBLE,
+median_pending_sqft DOUBLE,
+median_pending_sqft_yoy DOUBLE,
+off_market_in_two_weeks DOUBLE,
+off_market_in_two_weeks_yoy DOUBLE,
+off_market_in_one_week DOUBLE,
+off_market_in_one_week_yoy DOUBLE,
+percent_off_market_in_two_weeks DOUBLE,
+percent_off_market_in_two_weeks_yoy DOUBLE,
+percent_off_market_in_one_week DOUBLE,
+percent_off_market_in_one_week_yoy DOUBLE,
+total_new_listings DOUBLE,
+total_new_listings_yoy DOUBLE,
+average_new_listings DOUBLE,
+average_new_listings_yoy DOUBLE,
+median_new_listing_price DOUBLE,
+median_new_listing_price_yoy DOUBLE,
+median_new_listing_ppsf DOUBLE,
+median_new_listing_ppsf_yoy DOUBLE,
+inventory DOUBLE,
+inventory_yoy DOUBLE,
+total_active_listings DOUBLE,
+total_active_listings_yoy DOUBLE,
+active_listings DOUBLE,
+active_listings_yoy DOUBLE,
+age_of_inventory DOUBLE,
+age_of_inventory_yoy DOUBLE,
+homes_delisted DOUBLE,
+homes_delisted_yoy DOUBLE,
+percent_active_listings_delisted DOUBLE,
+percent_active_listings_delisted_yoy DOUBLE,
+median_active_list_price DOUBLE,
+median_active_list_price_yoy DOUBLE,
+median_active_list_ppsf DOUBLE,
+median_active_list_ppsf_yoy DOUBLE,
+average_of_median_list_price_amount DOUBLE,
+average_of_median_list_price_amount_yoy DOUBLE,
+average_of_median_offer_price_amount DOUBLE,
+average_of_median_offer_price_amount_yoy DOUBLE,
+avg_offer_to_list DOUBLE,
+avg_offer_to_list_yoy DOUBLE,
+average_sale_to_list_ratio DOUBLE,
+average_sale_to_list_ratio_yoy DOUBLE,
+median_days_on_market DOUBLE,
+median_days_on_market_yoy DOUBLE,
+pending_sales_to_sales_ratio DOUBLE,
+pending_sales_to_sales_ratio_yoy DOUBLE,
+months_of_supply DOUBLE,
+months_of_supply_yoy DOUBLE,
+average_pending_sales_listing_updates DOUBLE,
+average_pending_sales_listing_updates_yoy DOUBLE,
+percent_total_price_drops_of_inventory DOUBLE,
+percent_total_price_drops_of_inventory_yoy DOUBLE,
+percent_homes_sold_above_list DOUBLE,
+percent_homes_sold_above_list_yoy DOUBLE,
+price_drop_percent_of_old_list_price DOUBLE,
+price_drop_percent_of_old_list_price_yoy DOUBLE,
+last_updated VARCHAR(100),
+average_adjustment_average_homes_delisted VARCHAR(100),
+adjusted_average_homes_delisted DOUBLE,
+average_adjustment_average_homes_sold VARCHAR(100),
+adjusted_average_homes_sold DOUBLE,
+average_adjustment_average_new_listings VARCHAR(100),
+adjusted_average_new_listings DOUBLE,
+average_adjustment_pending_sales VARCHAR(100),
+adjusted_pending_sales DOUBLE,
+adjusted_average_homes_delisted_yoy DOUBLE,
+adjusted_average_homes_sold_yoy DOUBLE,
+adjusted_average_new_listings_yoy DOUBLE,
+adjusted_pending_sales_yoy DOUBLE
+);
+
+
 # Available Scripts
 
 In the project directory, you can run:
@@ -9,6 +117,4 @@ In the project directory, you can run:
 Runs the app in the development mode.\
 Port exposed in 4000
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
